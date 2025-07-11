@@ -62,8 +62,7 @@ func greet(w http.ResponseWriter, r *http.Request) {
 		Message: fmt.Sprintf("Hello, %s!", v.Name),
 	}
 
-	json.NewEncoder(w).Encode(
-		obj)
+	json.NewEncoder(w).Encode(obj)
 }
 
 func main() {
