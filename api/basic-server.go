@@ -44,6 +44,11 @@ func stream(w http.ResponseWriter, r *http.Request) {
 	time.Sleep(1 * time.Second)
 }
 
+
+{
+  "name": "Alice"
+}
+
 func greet(w http.ResponseWriter, r *http.Request) {
 	var v struct {
 		Name string
