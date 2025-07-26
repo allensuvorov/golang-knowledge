@@ -12,8 +12,6 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	// Register the two new handler functions and corresponding route patterns with
-	// the servemux, in exactly the same way that we did before.
 	mux := http.NewServeMux()
 	mux.HandleFunc("/hello", hello)
 	log.Print("starting server on :4000")
